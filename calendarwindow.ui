@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalendarWindow</class>
+ <widget class="QMainWindow" name="CalendarWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>800</width><height>600</height></rect></property>
+  <property name="windowTitle"><string>Календарь задач</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <!-- Header -->
+    <item>
+     <widget class="QLabel" name="headerLabel">
+      <property name="text"><string>Календарь</string></property>
+      <property name="alignment"><set>Qt::AlignCenter</set></property>
+      <property name="styleSheet"><string>font-size: 16pt; font-weight: bold;</string></property>
+     </widget>
+    </item>
+    <!-- Calendar widget -->
+    <item>
+     <widget class="QCalendarWidget" name="calendarWidget"/>
+    </item>
+    <!-- Tasks on selected date -->
+    <item>
+     <widget class="QTableWidget" name="TasksOnDateTable">
+      <property name="columnCount"><number>4</number></property>
+      <column><property name="text"><string>Название</string></property></column>
+      <column><property name="text"><string>Описание</string></property></column>
+      <column><property name="text"><string>Время</string></property></column>
+      <column><property name="text"><string>Статус</string></property></column>
+     </widget>
+    </item>
+    <!-- Button -->
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item>
+       <spacer name="hSpacer"><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_toHomePage">
+        <property name="text"><string>Главная страница</string></property>
+        <property name="minimumSize"><size><width>200</width><height>50</height></size></property>
+        <property name="styleSheet"><string>font-size: 14pt; padding: 10px;</string></property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="hSpacer2"><property name="orientation"><enum>Qt::Horizontal</enum></property></spacer>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar"/>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
+

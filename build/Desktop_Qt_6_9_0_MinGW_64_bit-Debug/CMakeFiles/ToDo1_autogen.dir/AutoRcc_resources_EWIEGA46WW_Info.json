@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "G:/tryQT/ToDo1/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ToDo1_autogen",
+	"CMAKE_BINARY_DIR" : "G:/tryQT/ToDo1/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "G:/tryQT/ToDo1/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "G:/tryQT/ToDo1",
+	"CMAKE_SOURCE_DIR" : "G:/tryQT/ToDo1",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "G:/tryQT/ToDo1/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ToDo1_autogen/include",
+	"INPUTS" : [],
+	"LOCK_FILE" : "G:/tryQT/ToDo1/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/ToDo1_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "F:/qt/6.9.0/mingw_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "G:/tryQT/ToDo1/build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/CMakeFiles/ToDo1_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "G:/tryQT/ToDo1/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

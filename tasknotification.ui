@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TaskNotification</class>
+ <widget class="QWidget" name="TaskNotification">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>400</width><height>200</height></rect></property>
+  <property name="windowTitle"><string>Напоминание</string></property>
+  <layout class="QVBoxLayout" name="mainLayout">
+    <item>
+      <widget class="QLabel" name="InfoTask_label">
+        <property name="text"><string>Текст уведомления</string></property>
+        <property name="alignment"><set>Qt::AlignCenter</set></property>
+        <property name="styleSheet"><string>font-size: 14pt; padding: 20px;</string></property>
+      </widget>
+    </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>TasksWindow</class>
+ <widget class="QMainWindow" name="TasksWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Все задачи</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="mainLayout">
+    <item>
+     <widget class="QLabel" name="headerLabel">
+      <property name="styleSheet">
+       <string>font-size: 16pt; font-weight: bold;</string>
+      </property>
+      <property name="text">
+       <string>Список задач</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QTableWidget" name="TasksViewer">
+      <property name="columnCount">
+       <number>4</number>
+      </property>
+      <column>
+       <property name="text">
+        <string>Название</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Описание</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Дата</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Прогресс</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="isSelected">
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="buttonLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_toHomePage">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>font-size: 14pt; padding: 10px;</string>
+        </property>
+        <property name="text">
+         <string>Главная страница</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_TaskComplete">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>50</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>font-size: 14pt; padding: 10px;</string>
+        </property>
+        <property name="text">
+         <string>Выполнить задачу</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

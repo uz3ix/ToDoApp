@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>StaticticsInfo</class>
+ <widget class="QWidget" name="StaticticsInfo">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>291</width>
+    <height>195</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Статистика задач</string>
+  </property>
+  <layout class="QVBoxLayout" name="mainLayout">
+   <item>
+    <widget class="QLabel" name="headerLabel">
+     <property name="styleSheet">
+      <string>font-size: 16pt; font-weight: bold;</string>
+     </property>
+     <property name="text">
+      <string>Статистика</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="allTasks">
+     <property name="styleSheet">
+      <string>font-size: 14pt;</string>
+     </property>
+     <property name="text">
+      <string>Всего задач: 0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="CompletedTasks">
+     <property name="styleSheet">
+      <string>font-size: 14pt;</string>
+     </property>
+     <property name="text">
+      <string>Выполнено: 0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="NotcomletedTasks">
+     <property name="styleSheet">
+      <string>font-size: 14pt;</string>
+     </property>
+     <property name="text">
+      <string>Не выполнено: 0</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
