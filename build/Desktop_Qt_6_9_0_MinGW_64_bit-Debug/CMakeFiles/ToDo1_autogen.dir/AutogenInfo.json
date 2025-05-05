@@ -437,8 +437,7 @@
 		"F:/qt/6.9.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginTargets.cmake",
 		"F:/qt/6.9.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginTargets-relwithdebinfo.cmake",
 		"F:/qt/6.9.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6QWindowsMediaPluginAdditionalTargetInfo.cmake",
-		"F:/qt/6.9.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaVersionlessAliasTargets.cmake",
-		"G:/tryQT/ToDo1/sound.qrc"
+		"F:/qt/6.9.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaVersionlessAliasTargets.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "G:/tryQT/ToDo1",
 	"CROSS_CONFIG" : false,

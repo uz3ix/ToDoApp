@@ -21,7 +21,6 @@ set(PROJECT_SOURCES
     taskswindow.cpp taskswindow.h taskswindow.ui
     calendarwindow.cpp calendarwindow.h calendarwindow.ui
     tasknotification.h tasknotification.cpp tasknotification.ui
-    sound.qrc
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)

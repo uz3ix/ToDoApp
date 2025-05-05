@@ -92,6 +92,11 @@
       </property>
       <item>
        <widget class="QLabel" name="nearestTaskName_label">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Название</string>
         </property>
@@ -102,6 +107,11 @@
       </item>
       <item>
        <widget class="QLabel" name="nearestTaskDescription_label">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Описание</string>
         </property>
@@ -112,6 +122,11 @@
       </item>
       <item>
        <widget class="QLabel" name="nearestTaskDate_label">
+        <property name="font">
+         <font>
+          <pointsize>12</pointsize>
+         </font>
+        </property>
         <property name="text">
          <string>Дата и время</string>
         </property>
@@ -123,7 +138,7 @@
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="buttonsLayout" stretch="1,1,1">
+     <layout class="QHBoxLayout" name="buttonsLayout" stretch="1,0,1">
       <item>
        <widget class="QPushButton" name="pushBut_addWindow">
         <property name="sizePolicy">
@@ -147,7 +162,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_toCalendarWindow">
+       <widget class="QPushButton" name="pushButton_Tasks">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -164,7 +179,7 @@
          <string notr="true">font-size: 14pt; padding: 10px;</string>
         </property>
         <property name="text">
-         <string>📅 Календарь</string>
+         <string>📋 Задачи</string>
         </property>
        </widget>
       </item>
@@ -230,7 +245,7 @@
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_Tasks">
+       <widget class="QPushButton" name="pushButton_toCalendarWindow">
         <property name="sizePolicy">
          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
           <horstretch>0</horstretch>
@@ -247,7 +262,7 @@
          <string notr="true">font-size: 14pt; padding: 10px;</string>
         </property>
         <property name="text">
-         <string>📋 Задачи</string>
+         <string>📅 Календарь</string>
         </property>
        </widget>
       </item>

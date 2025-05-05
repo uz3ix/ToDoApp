@@ -692,7 +692,6 @@ ToDo1_autogen/timestamp: \
 	G:/tryQT/ToDo1/main.cpp \
 	G:/tryQT/ToDo1/mainwindow.cpp \
 	G:/tryQT/ToDo1/mainwindow.h \
-	G:/tryQT/ToDo1/sound.qrc \
 	G:/tryQT/ToDo1/staticticsinfo.cpp \
 	G:/tryQT/ToDo1/staticticsinfo.h \
 	G:/tryQT/ToDo1/tasknotification.cpp \

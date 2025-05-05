@@ -1810,9 +1810,6 @@
 		{
 			"isExternal" : true,
 			"path" : "F:/qt/6.9.0/mingw_64/lib/cmake/Qt6Multimedia/Qt6MultimediaVersionlessAliasTargets.cmake"
-		},
-		{
-			"path" : "sound.qrc"
 		}
 	],
 	"kind" : "cmakeFiles",

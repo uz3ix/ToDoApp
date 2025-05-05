@@ -52,7 +52,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 28,
+				"line" : 27,
 				"parent" : 0
 			},
 			{
@@ -76,7 +76,7 @@
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 37,
+				"line" : 36,
 				"parent" : 0
 			},
 			{
@@ -412,8 +412,7 @@
 				11,
 				14,
 				17,
-				21,
-				32
+				21
 			]
 		}
 	],
@@ -548,8 +547,7 @@
 				11,
 				14,
 				17,
-				21,
-				32
+				21
 			]
 		},
 		{
@@ -563,13 +561,13 @@
 				15,
 				18,
 				20,
+				23,
 				24,
 				25,
 				26,
 				27,
 				28,
-				29,
-				30
+				29
 			]
 		},
 		{
@@ -586,25 +584,17 @@
 			]
 		},
 		{
-			"name" : "Resources",
-			"sourceIndexes" : 
-			[
-				23
-			]
-		},
-		{
 			"name" : "",
 			"sourceIndexes" : 
 			[
-				31
+				30
 			]
 		},
 		{
 			"name" : "CMake Rules",
 			"sourceIndexes" : 
 			[
-				33,
-				34
+				31
 			]
 		}
 	],
@@ -736,11 +726,6 @@
 			"sourceGroupIndex" : 2
 		},
 		{
-			"backtrace" : 4,
-			"path" : "sound.qrc",
-			"sourceGroupIndex" : 3
-		},
-		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ToDo1_autogen/include/ui_mainwindow.h",
@@ -786,26 +771,13 @@
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ToDo1_autogen/timestamp",
-			"sourceGroupIndex" : 4
-		},
-		{
-			"backtrace" : 0,
-			"compileGroupIndex" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ToDo1_autogen/EWIEGA46WW/qrc_sound.cpp",
-			"sourceGroupIndex" : 0
+			"sourceGroupIndex" : 3
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
 			"path" : "build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ToDo1_autogen/timestamp.rule",
-			"sourceGroupIndex" : 5
-		},
-		{
-			"backtrace" : 0,
-			"isGenerated" : true,
-			"path" : "build/Desktop_Qt_6_9_0_MinGW_64_bit-Debug/ToDo1_autogen/EWIEGA46WW/qrc_sound.cpp.rule",
-			"sourceGroupIndex" : 5
+			"sourceGroupIndex" : 4
 		}
 	],
 	"type" : "EXECUTABLE"

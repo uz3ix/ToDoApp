@@ -38,12 +38,12 @@ public:
     QLabel *nearestTaskDate_label;
     QHBoxLayout *buttonsLayout;
     QPushButton *pushBut_addWindow;
-    QPushButton *pushButton_toCalendarWindow;
+    QPushButton *pushButton_Tasks;
     QPushButton *pushButton_todeleteWindow;
     QHBoxLayout *hboxLayout;
     QSpacerItem *horizontalSpacer;
     QPushButton *pushButton_toStatisticWindow;
-    QPushButton *pushButton_Tasks;
+    QPushButton *pushButton_toCalendarWindow;
     QSpacerItem *horizontalSpacer_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -93,18 +93,23 @@ public:
         vboxLayout->setSizeConstraint(QLayout::SizeConstraint::SetMaximumSize);
         nearestTaskName_label = new QLabel(centralwidget);
         nearestTaskName_label->setObjectName("nearestTaskName_label");
+        QFont font;
+        font.setPointSize(12);
+        nearestTaskName_label->setFont(font);
         nearestTaskName_label->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         vboxLayout->addWidget(nearestTaskName_label);
 
         nearestTaskDescription_label = new QLabel(centralwidget);
         nearestTaskDescription_label->setObjectName("nearestTaskDescription_label");
+        nearestTaskDescription_label->setFont(font);
         nearestTaskDescription_label->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         vboxLayout->addWidget(nearestTaskDescription_label);
 
         nearestTaskDate_label = new QLabel(centralwidget);
         nearestTaskDate_label->setObjectName("nearestTaskDate_label");
+        nearestTaskDate_label->setFont(font);
         nearestTaskDate_label->setAlignment(Qt::AlignmentFlag::AlignCenter);
 
         vboxLayout->addWidget(nearestTaskDate_label);
@@ -126,14 +131,14 @@ public:
 
         buttonsLayout->addWidget(pushBut_addWindow);
 
-        pushButton_toCalendarWindow = new QPushButton(centralwidget);
-        pushButton_toCalendarWindow->setObjectName("pushButton_toCalendarWindow");
-        sizePolicy1.setHeightForWidth(pushButton_toCalendarWindow->sizePolicy().hasHeightForWidth());
-        pushButton_toCalendarWindow->setSizePolicy(sizePolicy1);
-        pushButton_toCalendarWindow->setMinimumSize(QSize(200, 50));
-        pushButton_toCalendarWindow->setStyleSheet(QString::fromUtf8("font-size: 14pt; padding: 10px;"));
+        pushButton_Tasks = new QPushButton(centralwidget);
+        pushButton_Tasks->setObjectName("pushButton_Tasks");
+        sizePolicy1.setHeightForWidth(pushButton_Tasks->sizePolicy().hasHeightForWidth());
+        pushButton_Tasks->setSizePolicy(sizePolicy1);
+        pushButton_Tasks->setMinimumSize(QSize(200, 50));
+        pushButton_Tasks->setStyleSheet(QString::fromUtf8("font-size: 14pt; padding: 10px;"));
 
-        buttonsLayout->addWidget(pushButton_toCalendarWindow);
+        buttonsLayout->addWidget(pushButton_Tasks);
 
         pushButton_todeleteWindow = new QPushButton(centralwidget);
         pushButton_todeleteWindow->setObjectName("pushButton_todeleteWindow");
@@ -145,7 +150,6 @@ public:
         buttonsLayout->addWidget(pushButton_todeleteWindow);
 
         buttonsLayout->setStretch(0, 1);
-        buttonsLayout->setStretch(1, 1);
         buttonsLayout->setStretch(2, 1);
 
         verticalLayout->addLayout(buttonsLayout);
@@ -165,14 +169,14 @@ public:
 
         hboxLayout->addWidget(pushButton_toStatisticWindow);
 
-        pushButton_Tasks = new QPushButton(centralwidget);
-        pushButton_Tasks->setObjectName("pushButton_Tasks");
-        sizePolicy1.setHeightForWidth(pushButton_Tasks->sizePolicy().hasHeightForWidth());
-        pushButton_Tasks->setSizePolicy(sizePolicy1);
-        pushButton_Tasks->setMinimumSize(QSize(200, 50));
-        pushButton_Tasks->setStyleSheet(QString::fromUtf8("font-size: 14pt; padding: 10px;"));
+        pushButton_toCalendarWindow = new QPushButton(centralwidget);
+        pushButton_toCalendarWindow->setObjectName("pushButton_toCalendarWindow");
+        sizePolicy1.setHeightForWidth(pushButton_toCalendarWindow->sizePolicy().hasHeightForWidth());
+        pushButton_toCalendarWindow->setSizePolicy(sizePolicy1);
+        pushButton_toCalendarWindow->setMinimumSize(QSize(200, 50));
+        pushButton_toCalendarWindow->setStyleSheet(QString::fromUtf8("font-size: 14pt; padding: 10px;"));
 
-        hboxLayout->addWidget(pushButton_Tasks);
+        hboxLayout->addWidget(pushButton_toCalendarWindow);
 
         horizontalSpacer_2 = new QSpacerItem(40, 20, QSizePolicy::Policy::Expanding, QSizePolicy::Policy::Minimum);
 
@@ -205,10 +209,10 @@ public:
         nearestTaskDescription_label->setText(QCoreApplication::translate("MainWindow", "\320\236\320\277\320\270\321\201\320\260\320\275\320\270\320\265", nullptr));
         nearestTaskDate_label->setText(QCoreApplication::translate("MainWindow", "\320\224\320\260\321\202\320\260 \320\270 \320\262\321\200\320\265\320\274\321\217", nullptr));
         pushBut_addWindow->setText(QCoreApplication::translate("MainWindow", "\342\236\225 \320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214 \320\267\320\260\320\264\320\260\321\207\321\203", nullptr));
-        pushButton_toCalendarWindow->setText(QCoreApplication::translate("MainWindow", "\360\237\223\205 \320\232\320\260\320\273\320\265\320\275\320\264\320\260\321\200\321\214", nullptr));
+        pushButton_Tasks->setText(QCoreApplication::translate("MainWindow", "\360\237\223\213 \320\227\320\260\320\264\320\260\321\207\320\270", nullptr));
         pushButton_todeleteWindow->setText(QCoreApplication::translate("MainWindow", "\360\237\227\221 \320\243\320\264\320\260\320\273\320\270\321\202\321\214 \320\267\320\260\320\264\320\260\321\207\321\203", nullptr));
         pushButton_toStatisticWindow->setText(QCoreApplication::translate("MainWindow", "\360\237\223\212 \320\241\321\202\320\260\321\202\320\270\321\201\321\202\320\270\320\272\320\260", nullptr));
-        pushButton_Tasks->setText(QCoreApplication::translate("MainWindow", "\360\237\223\213 \320\227\320\260\320\264\320\260\321\207\320\270", nullptr));
+        pushButton_toCalendarWindow->setText(QCoreApplication::translate("MainWindow", "\360\237\223\205 \320\232\320\260\320\273\320\265\320\275\320\264\320\260\321\200\321\214", nullptr));
     } // retranslateUi
 
 };
