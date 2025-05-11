@@ -54,30 +54,37 @@ void CalendarWindow::on_pushButton_toHomePage_clicked()
 // HIGHLIGHTING TASKS WITH COLOR
 
 void CalendarWindow::highlightTaskDates() {
-    for (int i = 1; i <= 31; ++i) {
-        QDate date = QDate::currentDate().addDays(i);
-        ui->calendarWidget->setDateTextFormat(date, QTextCharFormat());
-    }
+    // 1. Полностью сбросить форматирование ВСЕХ дат в календаре
+    ui->calendarWidget->setDateTextFormat(QDate(), QTextCharFormat());
 
+    // 2. Формат для выделения дат с задачами
+    QTextCharFormat taskDateFormat;
+    taskDateFormat.setForeground(Qt::white);
+    taskDateFormat.setBackground(Qt::red);
+    taskDateFormat.setFontWeight(QFont::Bold);
+
+    // 3. Получаем список дат, для которых есть задачи
     QSqlQuery query("SELECT DISTINCT date FROM tasks WHERE has_time = 1");
-
-    QTextCharFormat format;
-    format.setForeground(Qt::white);
-    format.setBackground(Qt::red);
-    format.setFontWeight(QFont::Bold);
+    QSet<QDate> datesWithTasks;
 
     while (query.next()) {
-
         QString dateStr = query.value(0).toString();
-        // qDebug() << "Сырая дата из БД:" << dateStr;
         QDateTime temp = QDateTime::fromString(dateStr, "dd-MM-yyyy HH:mm");
         QDate date = temp.date();
 
         if (date.isValid()) {
-            ui->calendarWidget->setDateTextFormat(date, format);
+            datesWithTasks.insert(date);
         }
     }
+
+    // 4. Применяем форматирование только для дат, где есть задачи
+    foreach (const QDate &date, datesWithTasks) {
+        ui->calendarWidget->setDateTextFormat(date, taskDateFormat);
+    }
 }
+
+
+
 
 
 // SHOW TASK IN DATE

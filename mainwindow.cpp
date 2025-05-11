@@ -24,6 +24,8 @@ MainWindow::MainWindow(QWidget *parent): QMainWindow(parent), ui(new Ui::MainWin
     connect(addWindow, &AddWindow::taskAdded, staticinfo, &StaticticsInfo::viewCountTasks);
     connect(tasksWindow, &TasksWindow::taskComleted, staticinfo, &StaticticsInfo::viewCountTasks);
     connect(deleteWindow, &DeleteWindow::taskDeleted, this, &MainWindow::getNextTask);
+    connect(addWindow, &AddWindow::taskAdded, calendarwindow, &CalendarWindow::highlightTaskDates);
+    connect(deleteWindow, &DeleteWindow::taskDeleted, calendarwindow, &CalendarWindow::highlightTaskDates);
     connect(addWindow, &AddWindow::taskAdded, this, &MainWindow::getNextTask);
 
 

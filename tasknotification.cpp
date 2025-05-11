@@ -17,30 +17,6 @@ TaskNotification::TaskNotification(QWidget *parent)
 
     setAttribute(Qt::WA_ShowWithoutActivating);
     ui->setupUi(this);
-    // QColor bgColor = palette().window().color();
-
-//     // Устанавливаем критически важные атрибуты
-//     setAttribute(Qt::WA_StyledBackground, true);
-//     setAttribute(Qt::WA_TranslucentBackground, false);
-//     setAutoFillBackground(true);
-
-//     // Явно задаем стиль с border
-//     setStyleSheet(QString(R"(
-//     TaskNotification {
-//         background-color: %1;
-//         border: 2px solid white;
-//         border-radius: 8px;
-//         padding: 12px;
-//     }
-//     QLabel {
-//         color: %2;
-//         background: transparent;
-//         font-size: 20px;  /* Размер текста */
-//         font-weight: 500;  /* Жирность */
-//     }
-// )").arg(bgColor.name())
-//                       .arg(bgColor.lightness() > 128 ? "black" : "white"));
-
 }
 
 TaskNotification::~TaskNotification()
